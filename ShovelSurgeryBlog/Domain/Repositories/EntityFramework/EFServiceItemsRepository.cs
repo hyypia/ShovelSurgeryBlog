@@ -17,12 +17,12 @@ namespace ShovelSurgeryBlog.Domain.Repositories.EntityFramework
             this.context = context;
         }
 
-        public IQueryable<ServiceItem> GetTextFields()
+        public IQueryable<ServiceItem> GetServiceItems()
         {
             return context.ServiceItems;
         }
 
-        public ServiceItem GetTextFieldById(Guid id)
+        public ServiceItem GetServiceItemById(Guid id)
         {
             return context.ServiceItems.FirstOrDefault(x => x.Id == id);
         }

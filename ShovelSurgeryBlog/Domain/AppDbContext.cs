@@ -42,7 +42,7 @@ namespace ShovelSurgeryBlog.Domain
 
             modelBuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
             {
-                RoleId = "3fbacc96-3a3e-4e7a-8b40-5de5aefaf705",
+                RoleId = "67657946-18f9-430d-9db4-391828dcba95",
                 UserId = "0c11bc74-2761-4eb9-908c-b1bd6bb7650d"
             });
 

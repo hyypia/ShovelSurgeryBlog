@@ -24,7 +24,7 @@ namespace ShovelSurgeryBlog.Domain.Entities
         public virtual string Text { get; set; }
 
         [Display(Name = "Обложка")]
-        public virtual string Cover { get; set; }
+        public virtual string TitleImagePath { get; set; }
 
         [Display(Name = "SEO метатег Title")]
         public string MetaTitle { get; set; }

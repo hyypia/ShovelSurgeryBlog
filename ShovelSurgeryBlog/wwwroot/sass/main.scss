@@ -797,7 +797,7 @@
 	}
 
 
-	.login-area {
+	.div-box {
 		padding: 15px 0;
 
 		label {
@@ -807,4 +807,10 @@
 
 	a {
 		display: block;
+	}
+
+	.img-block {
+		display:block;
+		max-width: 100%;
+		margin-top: 0;
 	}

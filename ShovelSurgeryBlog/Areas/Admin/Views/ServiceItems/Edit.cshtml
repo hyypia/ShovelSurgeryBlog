@@ -12,7 +12,7 @@
         <form asp-area="Admin" asp-controller="ServiceItems" asp-action="Edit" method="post" enctype="multipart/form-data">
             <input type="hidden" asp-for="Id" />
             <input type="hidden" asp-for="DateAdded" />
-            <input type="hidden" asp-for="TitleImagePath" />
+            <input type="hidden" asp-for="Cover" />
 
             <div asp-validation-summary="All"></div>
             <div class="div-box">
@@ -31,10 +31,10 @@
                 <span asp-validation-for="Text"></span>
             </div>
             <div class="div-box">
-                <label asp-for="TitleImagePath"></label>
+                <label asp-for="Cover"></label>
                 <input type="file" name="titleImageFile" id="titleImageFile" />
                 <div>
-                    <img class="img-block" src="~/images/@Model.TitleImagePath" />
+                    <img class="img-block" src="~/images/@Model.Cover" />
                 </div>
             </div>
             <div class="div-box">

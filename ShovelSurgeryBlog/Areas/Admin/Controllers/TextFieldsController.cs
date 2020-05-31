@@ -16,7 +16,7 @@ namespace ShovelSurgeryBlog.Areas.Admin.Controllers
 
         public IActionResult Edit(string codeWord)
         {
-            var entity = dataManager.TextField.GetTextFieldByCodeWord(codeWord);
+            var entity = dataManager.TextFields.GetTextFieldByCodeWord(codeWord);
             return View(entity);
         }
 
@@ -25,7 +25,7 @@ namespace ShovelSurgeryBlog.Areas.Admin.Controllers
         {
             if(ModelState.IsValid)
             {
-                dataManager.TextField.SaveTextField(model);
+                dataManager.TextFields.SaveTextField(model);
                 return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).CutController());
             }
             return View(model);

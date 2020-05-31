@@ -8,7 +8,7 @@
     <h2>@strTitle</h2>
     <div>
         <h3>Публикации</h3>
-        <div class="login-area">
+        <div class="div-box">
             <a asp-area="Admin" asp-controller="ServiceItems" asp-action="Edit" asp-route-id="">Добавить публикацию</a>
         </div>
         @if (Model.Any())
@@ -32,13 +32,13 @@
             </div>
         }
     </div>
-    <div class="login-area">
+    <div class="div-box">
         <h3>Редактировать страницы сайта</h3>
         <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageIndex">Главная</a>
         <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageServices">Публикации</a>
         <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageContacts">Контакты</a>
     </div>
-    <div class="login-area">
+    <div class="div-box">
         <form asp-area="" asp-controller="Account" asp-action="Logout" method="post">
             <input type="submit" value="Выйти" />
         </form>

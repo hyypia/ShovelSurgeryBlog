@@ -17,7 +17,7 @@ namespace ShovelSurgeryBlog.Controllers
         }
         public IActionResult Index()
         {
-            return View(dataManager.TextFields.GetTextFieldByCodeWord("PageHome"));
+            return View(dataManager.TextFields.GetTextFieldByCodeWord("PageIndex"));
         }
 
         public IActionResult Contacts()

@@ -1,18 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShovelSurgeryBlog.Domain;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShovelSurgeryBlog.Controllers
 {
-    public class PostsController : Controller
+    public class ServicesController : Controller
     {
         private readonly DataManager dataManager;
 
-        public PostsController(DataManager dataManager)
+        public ServicesController(DataManager dataManager)
         {
             this.dataManager = dataManager;
         }
@@ -23,7 +19,7 @@ namespace ShovelSurgeryBlog.Controllers
             {
                 return View("Show", dataManager.ServiceItems.GetServiceItemById(id));
             }
-            ViewBag.TextField = dataManager.TextFields.GetTextFieldByCodeWord("PagePosts");
+            ViewBag.TextField = dataManager.TextFields.GetTextFieldByCodeWord("PageServices");
             return View(dataManager.ServiceItems.GetServiceItems());
         }
     }

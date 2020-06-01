@@ -56,7 +56,7 @@ namespace ShovelSurgeryBlog.Domain
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
                 Id = new Guid("45ea19e4-22ec-4f15-a240-2c5153fac925"),
-                CodeWord = "PagePublications",
+                CodeWord = "PageServices",
                 Title = "Публикации"
             });
 
